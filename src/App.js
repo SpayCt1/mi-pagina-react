@@ -4,40 +4,62 @@ import "./App.css";
 function App() {
   return (
     <div className="app">
+      {/* Hero Section */}
       <header className="hero">
-        <h1>¡Hola! Soy <span>Alex</span></h1>
-        <p>Desarrollador web y creador de experiencias digitales.</p>
-        <a href="#contacto" className="btn">Contáctame</a>
+        <h1>SkyFly</h1>
+        <p>Encuentra los mejores vuelos al mejor precio</p>
+        <div className="search-box">
+          <input type="text" placeholder="Origen" />
+          <input type="text" placeholder="Destino" />
+          <input type="date" />
+          <button>Buscar vuelos</button>
+        </div>
       </header>
 
-      <section className="about">
-        <h2>Sobre mí</h2>
-        <p>
-          Me apasiona construir sitios web modernos, rápidos y funcionales.
-          Trabajo con React, Node.js y diseño UI/UX. Siempre buscando nuevos retos.
-        </p>
-      </section>
-
-      <section className="projects">
-        <h2>Proyectos</h2>
-        <div className="project-grid">
+      {/* Destinations Section */}
+      <section className="destinations">
+        <h2>Destinos populares</h2>
+        <div className="cards">
           <div className="card">
-            <h3>Portafolio React</h3>
-            <p>Un sitio personal con animaciones y diseño minimalista.</p>
+            <img src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34" alt="París" />
+            <h3>París</h3>
+            <p>Desde $320 USD</p>
           </div>
           <div className="card">
-            <h3>App de tareas</h3>
-            <p>Organiza tus pendientes con interfaz limpia y funcional.</p>
+            <img src="https://images.unsplash.com/photo-1528909514045-2fa4ac7a08ba" alt="Tokio" />
+            <h3>Tokio</h3>
+            <p>Desde $550 USD</p>
           </div>
           <div className="card">
-            <h3>API de clima</h3>
-            <p>Consulta el clima en tiempo real usando OpenWeather.</p>
+            <img src="https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1" alt="Nueva York" />
+            <h3>Nueva York</h3>
+            <p>Desde $280 USD</p>
           </div>
         </div>
       </section>
 
-      <footer id="contacto">
-        <p>© 2025 Alex Dev | Hecho con ❤️ y React</p>
+      {/* Features Section */}
+      <section className="features">
+        <h2>¿Por qué elegir SkyFly?</h2>
+        <div className="feature-grid">
+          <div className="feature">
+            <h3>✈️ Variedad de aerolíneas</h3>
+            <p>Compara más de 100 aerolíneas y consigue la mejor oferta.</p>
+          </div>
+          <div className="feature">
+            <h3>💰 Precios bajos garantizados</h3>
+            <p>Usamos inteligencia de precios para ofrecerte las mejores tarifas.</p>
+          </div>
+          <div className="feature">
+            <h3>🕓 Atención 24/7</h3>
+            <p>Nuestro equipo de soporte está disponible en todo momento.</p>
+          </div>
+        </div>
+      </section>
+
+      {/* Footer */}
+      <footer>
+        <p>© 2025 SkyFly | Tu próximo destino comienza aquí 🌍</p>
       </footer>
     </div>
   );

@@ -6,71 +6,84 @@
 }
 
 .app {
+  background-color: #f7f9fc;
   color: #222;
-  background-color: #fafafa;
-  line-height: 1.6;
 }
 
+/* HERO */
 .hero {
-  text-align: center;
-  padding: 100px 20px;
   background: linear-gradient(135deg, #0078ff, #00c6ff);
   color: white;
+  text-align: center;
+  padding: 100px 20px;
 }
 
 .hero h1 {
-  font-size: 2.5rem;
+  font-size: 3rem;
+  font-weight: 700;
   margin-bottom: 10px;
 }
 
-.hero h1 span {
-  color: #ffdf6b;
-}
-
 .hero p {
-  font-size: 1.1rem;
-  margin-bottom: 20px;
+  font-size: 1.2rem;
+  margin-bottom: 30px;
 }
 
-.btn {
-  background-color: white;
-  color: #0078ff;
-  padding: 10px 25px;
-  border-radius: 30px;
-  text-decoration: none;
-  font-weight: 600;
+.search-box {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.search-box input {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  width: 180px;
+  font-size: 1rem;
+}
+
+.search-box button {
+  background-color: #ffdf6b;
+  color: #222;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
   transition: 0.3s;
 }
 
-.btn:hover {
-  background-color: #ffdf6b;
-  color: #222;
+.search-box button:hover {
+  background-color: white;
 }
 
-.about, .projects {
-  padding: 60px 20px;
-  max-width: 1000px;
-  margin: auto;
+/* DESTINATIONS */
+.destinations {
   text-align: center;
+  padding: 60px 20px;
 }
 
-.about h2, .projects h2 {
-  font-size: 2rem;
-  margin-bottom: 20px;
+.destinations h2 {
   color: #0078ff;
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
 
-.project-grid {
+.cards {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
   gap: 20px;
+  max-width: 1000px;
+  margin: auto;
 }
 
 .card {
   background-color: white;
   border-radius: 15px;
-  padding: 20px;
   box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  overflow: hidden;
   transition: transform 0.3s;
 }
 
@@ -78,10 +91,53 @@
   transform: translateY(-5px);
 }
 
+.card img {
+  width: 100%;
+  height: 160px;
+  object-fit: cover;
+}
+
+.card h3 {
+  margin: 15px 0 5px;
+  color: #0078ff;
+}
+
+.card p {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+/* FEATURES */
+.features {
+  background-color: #eef6ff;
+  padding: 60px 20px;
+  text-align: center;
+}
+
+.features h2 {
+  color: #0078ff;
+  margin-bottom: 30px;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 30px;
+  max-width: 900px;
+  margin: auto;
+}
+
+.feature {
+  background-color: white;
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+/* FOOTER */
 footer {
   background-color: #0078ff;
   color: white;
   text-align: center;
   padding: 20px;
-  margin-top: 40px;
 }
